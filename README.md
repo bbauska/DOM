@@ -48,6 +48,7 @@ methods:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can change the content inside an HTML element using JavaScript. The two most common 
 properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:</mark></b></p>
+
 <ul>
   <li><b><mark>innerHTML</mark></b>: Allows you to get or set the HTML content inside an element.</li>
   <li><b><mark>textContent</mark></b>: Allows you to get or set the text content inside an 
@@ -110,6 +111,7 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can add, remove, or toggle <b><mark>classes</mark></b> on an element using JavaScript. 
 This is helpful for styling or applying animations.</p>
+
 <ul>
   <li><b><mark>classList.add()</mark></b>: Adds a <b><mark>class</mark></b> to an element.</li>
   <li><b><mark>classList.remove()</mark></b>: Removes a <b><mark>class</mark></b> from an element.</li>
@@ -171,13 +173,13 @@ This is helpful for styling or applying animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Adding a Class (<b><mark>addClass()</mark></b>): When you click the "Add 'highlight' Class" 
-      button, the highlight class is added to the div element with the id="example". This changes 
-	  the text color to red and makes it bold (as defined in the CSS).</li>
+    button, the highlight class is added to the div element with the id="example". This changes 
+	the text color to red and makes it bold (as defined in the CSS).</li>
   <li>Removing a Class (<b><mark>removeClass()</mark></b>): When you click the "Remove 'bold' Class" 
-      button, the bold class is removed from the div, which removes the bold styling from the text.</li>
+    button, the bold class is removed from the div, which removes the bold styling from the text.</li>
   <li>Toggling a Class (<b><mark>toggleClass()</mark></b>): When you click the "Toggle 'highlight' 
-      Class" button, the highlight class is either added or removed, depending on whether it's 
-	  already present. If the class is present, it will be removed; if not, it will be added.</li>
+    Class" button, the highlight class is either added or removed, depending on whether it's 
+	already present. If the class is present, it will be removed; if not, it will be added.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Set CSS Styles Using JavaScript</h3>
@@ -197,11 +199,13 @@ document.getElementById("demo").style.cssText = "color: blue; font-size: 18px;";
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Sometimes, you need to create new elements, add them to the DOM, or remove existing ones. 
 You can do this easily with the following methods;</p>
+
 <ul>
   <li><b><mark>document.createElement()</mark></b>: Creates a new element.</li>
   <li><b><mark>appendChild()</mark></b>: Adds a new element to a parent element.</li>
   <li><b><mark>removeChild()</mark></b>: Removes a child element from a parent.</li>
 </ul>
+
 <pre>
 // Create a new element
 let newDiv = document.createElement("div");
@@ -216,6 +220,7 @@ document.body.removeChild(newDiv);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can insert new elements at specific positions relative to existing elements using methods 
 like <b><mark>insertBefore()</mark></b>.</p>
+
 <pre>
 // Create a new element
 let newDiv = document.createElement("div");
@@ -231,6 +236,7 @@ document.body.insertBefore(newDiv, referenceNode);
 <h3>6. Manipulate Element Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can easily get, set, or remove the attributes of an HTML element using the following methods:</p>
+
 <ul>
   <li><b><mark>getAttribute()</mark></b>: Retrieves the value of an attribute.</li>
   <li><b><mark>setAttribute()</mark></b>: Sets a new value for an attribute.</li>
@@ -253,6 +259,7 @@ document.getElementById("image").removeAttribute("src");
 <p>HTML5 introduced data attributes, which are custom attributes that you can use to store 
 extra information about an element. These are particularly useful for adding data to an 
 element without affecting its visual structure.</p>
+
 <ul>
   <li><b><mark>dataset</mark></b>: A special property in JavaScript that allows you to access 
     data attributes.</li>
@@ -269,13 +276,13 @@ console.log(userId); // Outputs: 12345
 <h2 id="D02">02 How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> 
 in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Adding a class to a <b><mark>DOM (Document Object Model)</mark></b> element in JavaScript 
-is a fundamental task that enables developers to dynamically manipulate the appearance and 
-behavior of web pages. Classes in HTML provide a powerful way to apply CSS styles or 
-JavaScript functionality to multiple elements at once.</p>
+<p>Adding a class to a <b><mark>DOM (Document Object Model)</mark></b> element in JavaScript is a 
+fundamental task that enables developers to dynamically manipulate the appearance and behavior of 
+web pages. Classes in HTML provide a powerful way to apply CSS styles or JavaScript functionality 
+to multiple elements at once.</p>
 
-<p>By using JavaScript, you can easily add, remove, or toggle classes on elements, making 
-your web applications more interactive and responsive to user actions.</p>
+<p>By using JavaScript, you can easily add, remove, or toggle classes on elements, making your web 
+applications more interactive and responsive to user actions.</p>
 
 <p>These are the following approaches:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -343,9 +350,9 @@ add class name to elements. We will access the <b><mark>div</mark></b> using the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>className</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this approach, we are using the <b><mark>className</mark></b> property. This property 
-returns the <b><mark>className</mark></b> of the element. If the element has already a 
-class then it will simply add another one to it or else it will append our new class to it.
+In this approach, we are using the <b><mark>className</mark></b> property. This property returns 
+the <b><mark>className</mark></b> of the element. If the element has already a class then it will 
+simply add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -524,8 +531,8 @@ elements with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D03-03">03. Using <b><mark>getElementsByTagName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This method selects elements based on their tag name. It returns a collection of elements 
-with the specified tag name.</p>
+<p>This method selects elements based on their tag name. It returns a collection of elements with 
+the specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -576,8 +583,8 @@ with the specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D03-04">04. Using <b><mark>querySelector</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This method selects the first element that matches a specified CSS selector. It returns 
-only one element.</p>
+<p>This method selects the first element that matches a specified CSS selector. It returns only one 
+element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -681,14 +688,14 @@ containing all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D04">04. How to get all ID of the DOM elements with JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Given a HTML document and the task is to get the all ID of the DOM elements in an array. 
-There are two methods to solve this problem which are discusses below:</p>
+<p>Given a HTML document and the task is to get the all ID of the DOM elements in an array. There 
+are two methods to solve this problem which are discusses below:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach 1:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>First select all elements using <b><mark>$(‘*’)</mark></b> selector, which selects every 
-element of the document. Use <b><mark>.each()</mark></b> method to traverse all elements and 
-check if it has an ID. If it has an ID then push it into the array.</p>
+<p>First select all elements using <b><mark>$(‘*’)</mark></b> selector, which selects every element 
+of the document. Use <b><mark>.each()</mark></b> method to traverse all elements and check if it has 
+an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example implements the above approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -885,10 +892,10 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using getAttribute() Method</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>getAttribute()</mark></b> method in JavaScript retrieves the value of a 
-specified attribute from an HTML element. To get data attributes, use 
-<b><mark>element.getAttribute(‘data-attribute’)</mark></b>. This method allows precise 
-selection and manipulation of individual data attributes without accessing all at once.</p>
+<p>The <b><mark>getAttribute()</mark></b> method in JavaScript retrieves the value of a specified 
+attribute from an HTML element. To get data attributes, use <b><mark>element.getAttribute(‘data-attribute’)</mark></b>. This method allows precise selection 
+and manipulation of individual data attributes without accessing all at once.</p>
+
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -942,8 +949,8 @@ selection and manipulation of individual data attributes without accessing all a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When working with the DOM in JavaScript, selecting elements by their class names is a common 
 task. JavaScript provides several methods to achieve this, whether we need to select one or 
-multiple elements. In this article, we will cover different approaches to get elements by 
-class name in JavaScript.</p>
+multiple elements. In this article, we will cover different approaches to get elements by class 
+name in JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Prerequisites</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -952,6 +959,7 @@ class name in JavaScript.</p>
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
+
 <p>Below are the following approaches to get elements by class name in Javascript:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
@@ -1511,6 +1519,7 @@ be used for getting the port, domain, and protocol as it has inbuilt methods to 
   <li>The <b><mark>url.port</mark></b> property is used to return the port of the URL. It returns ” if the port is 
     not described explicitly.</li>
 </ul>
+
 <p>Note: This API is not supported in Internet Explorer 11.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
@@ -1584,6 +1593,7 @@ port = url_object.port;
 </a>
 </p>
 <!-- image037.png -->
+
 <ul>
   <li><b>After</b> Clicking the button:</li>
 </ul>
@@ -1735,8 +1745,8 @@ extraction of the hostname on that URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D11-01">01. Using <b><mark>Document.URL</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The DOM URL property in HTML is used to return a string that contains the complete URL of 
-the current document. The string also includes the HTTP protocol such as ( http://).</p>
+<p>The DOM URL property in HTML is used to return a string that contains the complete URL of the 
+current document. The string also includes the HTTP protocol such as ( http://).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1760,9 +1770,9 @@ console.log(currentUrl);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D11-02">02. Using <b><mark>window.location.href</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>window.location.href</mark></b> property of the HTML DOM Window object returns a string containing 
-the URL of the current page. This property is part of the Location object, which contains 
-information about the current location of the document.</p>
+<p>The <b><mark>window.location.href</mark></b> property of the HTML DOM Window object returns a 
+string containing the URL of the current page. This property is part of the Location object, which 
+contains information about the current location of the document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1999,8 +2009,8 @@ geeksforgeeks.org
 ?search=query
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Method 2: In this method we will use <b><mark>URL()</mark></b> to create a new URL object and then use it for 
-parsing the provided URL.</h4>
+<h4>Method 2: In this method we will use <b><mark>URL()</mark></b> to create a new URL object and 
+then use it for parsing the provided URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 // Store the URL into variable 
@@ -2048,6 +2058,7 @@ styles, and content. This allows us to create dynamic and interactive web pages.
 
 <p>Methods to Identify the elements to manipulate: There are several methods to identify 
 the HTML elements that we want to manipulate using JavaScript. The most common methods are:</p>
+
 <ul>
   <li>Using the element's ID: We can assign an ID to an HTML element and use 
     <b><mark>document.getElementById()</mark></b> to access it.</li>
@@ -2056,10 +2067,11 @@ the HTML elements that we want to manipulate using JavaScript. The most common m
   <li>Using the element's tag name: We can use <b><mark>document.getElementsByTagName()</mark></b> 
     to access all elements with a particular tag name.</li>
 </ul>
+
 <p>Accessing the properties of the elements: Once we have identified the HTML element that we 
 want to manipulate, we can access its properties using JavaScript. For example, to access the 
-text content of an element, we can use the <b><mark>innerHTML</mark></b> property. Similarly, we can access the 
-style properties of an element using the style property.</p>
+text content of an element, we can use the <b><mark>innerHTML</mark></b> property. Similarly, 
+we can access the style properties of an element using the style property.</p>
 
 <p>Use <b><mark>Event Listeners</mark></b> to Respond to User Interactions: We can use event 
 listeners to respond to user interactions such as clicking a button or hovering over an 
@@ -2078,6 +2090,7 @@ to use these methods and show you how to access and manipulate elements in your 
 <p>The first step in working with HTML elements in JavaScript is to identify the element you 
 want to manipulate. There are several ways to do this, depending on the specific element 
 you're trying to access. Here are some common methods:</p>
+
 <ul>
   <li><b><mark>getElementById()</mark></b> Method: Use this method to access an element with a 
     specific ID. IDs should be unique within an HTML document, so this method will always return 
@@ -2129,6 +2142,7 @@ button.addEventListener("click", function() {
 });
 </script>
 </pre>
+
 <p>In this example, we use getElementById() to access a button element with the ID "myButton". 
 We then add an event listener to the button using the <b><mark>addEventListener()</mark></b> 
 method. The event we're listening for is a "click" event, which is triggered when the user 
@@ -2258,8 +2272,8 @@ to create the desired behavior.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D15">15. How to use innerHTML in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>innerHTML</mark></b> property in JavaScript allows you to get or set the HTML content of an element 
-as a string.</p>
+<p>The <b><mark>innerHTML</mark></b> property in JavaScript allows you to get or set the HTML 
+content of an element as a string.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax For</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2277,13 +2291,15 @@ let element = document.getElementById("myElementId");
 element.innerHTML = "New HTML content";
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Here are step-by-step instructions on how to use the <b><mark>innerHTML</mark></b> property in JavaScript</h3>
+<h3>Here are step-by-step instructions on how to use the <b><mark>innerHTML</mark></b> property 
+in JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Access an HTML element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Use JavaScript to select the HTML element you want to manipulate. You can do this using 
-various methods like <b><mark>document.getElementById()</mark></b>, <b><mark>document.querySelector()</mark></b>, 
+<p>Use JavaScript to select the HTML element you want to manipulate. You can do this using various 
+methods like <b><mark>document.getElementById()</mark></b>, <b><mark>document.querySelector()</mark></b>, 
 or <b><mark>document.querySelectorAll()</mark></b>.</p>
+
 <pre>
 &lt;div id="myElement"&gt;Initial content&lt;/div&gt;
 let element = document.getElementById("myElement");
@@ -2292,6 +2308,7 @@ let element = document.getElementById("myElement");
 <h4>Step 2: Get the HTML content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If you want to retrieve the current HTML content of the element, use the innerHTML property.</p>
+
 <pre>
 let htmlContent = element.innerHTML;
 console.log(htmlContent); 
@@ -2302,12 +2319,14 @@ console.log(htmlContent);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If you want to replace or update the HTML content of the element, assign a new HTML 
 string to the innerHTML property.</p>
+
 <pre>element.innerHTML = "<b>New content</b>";</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 4: Verify the changes(optional)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can optionally verify that the HTML content has been updated as expected by accessing the 
 element again or using browser developer tools.</p>
+
 <pre>
 console.log(element.innerHTML);
  // Output: <b>New content</b>
@@ -2401,7 +2420,6 @@ property to append HTML directly to an element.</h4>
   &lt;script&gt;
     const container = document.getElementById('container');
     container.innerHTML += 
-      `
       &lt;h3&gt;
         Hey Geek, &lt;br/&gt;
         Welcome to GeeksforGeeks
@@ -2467,7 +2485,6 @@ event to add HTML onclick to the button.</h4>
       const container = 
         document.getElementById('container');
       container.innerHTML +=
-        `
         &lt;h3&gt;
           Hey Geek, &lt;br/&gt;
           Welcome to GeeksforGeeks
