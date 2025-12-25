@@ -132,6 +132,7 @@ body {
 }
 #myBtn:hover {
   background-color: #ffe7e7;  /* very pale red */
+  color: #000000;  /* black */
 }
 
 details {
